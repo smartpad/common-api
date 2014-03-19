@@ -1,13 +1,15 @@
 package com.jinnova.smartpad.partner;
 
 public interface IUser {
+	
+	boolean isPrimary();
 
-	public abstract String getLogin();
+	String getLogin();
 
-	public abstract String getPasshash();
+	String getPasshash();
 
-	public abstract void setPasshash(String passhash);
+	void setPasshash(String passhash);
 
-	public abstract String getBranchId();
+	String getBranchId();
 
 }
