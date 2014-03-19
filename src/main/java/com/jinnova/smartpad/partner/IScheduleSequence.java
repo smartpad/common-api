@@ -1,19 +1,17 @@
 package com.jinnova.smartpad.partner;
 
-import java.util.LinkedList;
-
 public interface IScheduleSequence {
 	
-	LinkedList<Integer> getMinutes();
+	int[] getMinutes();
 
-	LinkedList<Integer> getHours();
+	int[] getHours();
 
-	LinkedList<Integer> getDaysOfWeek();
+	int[] getDaysOfWeek();
 
-	LinkedList<Integer> getDaysOfMonth();
+	int[] getDaysOfMonth();
 
-	LinkedList<Integer> getMonths();
+	int[] getMonths();
 
-	LinkedList<Integer> getYears();
+	int[] getYears();
 
 }

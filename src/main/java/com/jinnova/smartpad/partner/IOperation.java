@@ -8,11 +8,19 @@ public interface IOperation {
 
 	String getName();
 	
-	LinkedList<String> getMemberLevels();
-
-	IAddress getAddress();
+	ISchedule getOpenHours();
 	
-	ISchedule getOpeningHours();
+	long getGpsLon();
+
+	void setGpsLon(long gpsLon);
+
+	long getGpsLat();
+
+	void setGpsLat(long gpsLat);
+
+	String getAddressLines();
+
+	void setAddressLines(String addressLines);
 
 	String getPhone();
 
@@ -21,6 +29,8 @@ public interface IOperation {
 	String getEmail();
 
 	void setEmail(String email);
+	
+	LinkedList<String> getMemberLevels();
 
 	Boolean isMemberNameRequired();
 
