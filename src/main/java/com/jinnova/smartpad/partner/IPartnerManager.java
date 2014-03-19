@@ -1,7 +1,6 @@
 package com.jinnova.smartpad.partner;
 
 import java.sql.SQLException;
-import java.util.LinkedList;
 
 public interface IPartnerManager {
 
@@ -20,5 +19,5 @@ public interface IPartnerManager {
 
 	void deleteUser(IUser authorizedUser, IUser u) throws SQLException;
 	
-	LinkedList<IUser> listUsers(IUser authorizedUser) throws SQLException;
+	IUser[] listUsers(IUser authorizedUser) throws SQLException;
 }

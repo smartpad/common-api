@@ -22,4 +22,12 @@ public interface IUser {
 
 	IOperation loadBranch() throws SQLException;
 
+	IOperation[] loadStores() throws SQLException;
+	
+	IOperation newStoreInstance();
+	
+	void putStore(IOperation store) throws SQLException;
+	
+	void deleteStore(IOperation store) throws SQLException;
+
 }
