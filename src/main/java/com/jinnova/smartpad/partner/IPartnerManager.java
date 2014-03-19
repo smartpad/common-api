@@ -5,6 +5,8 @@ import java.util.LinkedList;
 
 public interface IPartnerManager {
 
+	void clearDatabaseForTests() throws SQLException;
+
 	/*
 	 * User APIs
 	 * */

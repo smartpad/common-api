@@ -20,6 +20,6 @@ public interface IUser {
 	 * */
 	void updateBranch() throws SQLException;
 
-	IBranch loadBranch() throws SQLException;
+	IOperation loadBranch() throws SQLException;
 
 }
