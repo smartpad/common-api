@@ -19,12 +19,4 @@ public interface IPartnerManager {
 	void deleteUser(IUser authorizedUser, IUser u) throws SQLException;
 	
 	LinkedList<IUser> listUsers(IUser authorizedUser) throws SQLException;
-
-	/*
-	 * Branch APIs
-	 * 
-	 * */
-	void updateBranch(IUser authorizedUser, IBranch branch) throws SQLException;
-
-	IBranch loadBranch(String branchId) throws SQLException;
 }
