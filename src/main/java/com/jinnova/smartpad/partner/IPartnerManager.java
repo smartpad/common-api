@@ -1,12 +1,10 @@
-package com.jinnova.smartpad.db;
+package com.jinnova.smartpad.partner;
 
 import java.sql.SQLException;
 
-import com.jinnova.smartpad.partner.IUser;
+public interface IPartnerManager {
 
-public interface IUserDao {
-
-	IUser createPrimaryUser(String string, String string2) throws SQLException;
+	IUser createPrimaryUser(String login, String password) throws SQLException;
 
 	IUser loadUser(String login) throws SQLException;
 
@@ -16,4 +14,7 @@ public interface IUserDao {
 
 	void deleteUser(IUser u) throws SQLException;
 
+	void updateBranch(IBranch branch) throws SQLException;
+
+	IBranch loadBranch(String branchId) throws SQLException;
 }
