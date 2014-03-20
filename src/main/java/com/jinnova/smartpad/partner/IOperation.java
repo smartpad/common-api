@@ -1,7 +1,5 @@
 package com.jinnova.smartpad.partner;
 
-import java.util.LinkedList;
-
 public interface IOperation {
 	
 	void setName(String name);
@@ -30,7 +28,9 @@ public interface IOperation {
 
 	void setEmail(String email);
 	
-	LinkedList<String> getMemberLevels();
+	String[] getMemberLevels();
+	
+	void setMemberLevels(String[] memberLevels);
 
 	Boolean isMemberNameRequired();
 
