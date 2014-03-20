@@ -6,6 +6,8 @@ public interface IOperation {
 
 	String getName();
 	
+	ICatalog getRootCatalog();
+	
 	ISchedule getOpenHours();
 	
 	long getGpsLon();
