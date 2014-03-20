@@ -16,11 +16,11 @@ public interface ICatalog {
 	
 	ICatalogItem newCatalogItemInstance();
 	
-	void putSubCatalog(ICatalog cat) throws SQLException;
+	void putSubCatalog(IUser authorizedUser, ICatalog cat) throws SQLException;
 	
-	void putCatalogItem(ICatalogItem item) throws SQLException;
+	void putCatalogItem(IUser authorizedUser, ICatalogItem item) throws SQLException;
 	
-	void delete(ICatalog cat);
+	void delete(IUser authorizedUser, ICatalog cat);
 	
-	void delete(ICatalogItem item);
+	void delete(IUser authorizedUser, ICatalogItem item);
 }
