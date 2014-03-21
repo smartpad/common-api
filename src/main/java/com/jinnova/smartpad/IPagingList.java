@@ -4,7 +4,13 @@ import java.sql.SQLException;
 
 import com.jinnova.smartpad.partner.IUser;
 
-public interface IPagingList<T> {
+public interface IPagingList<T, E> {
+	
+	void setPageSize(int pageSize);
+	
+	void setSortField(E e);
+	
+	void setSortDirection(boolean ascending);
 	
 	IPage<T> loadPage(int pageNumber) throws SQLException;
 	

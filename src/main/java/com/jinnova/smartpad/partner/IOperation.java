@@ -12,7 +12,7 @@ public interface IOperation {
 	
 	void setPromotionPageSize(int pageSize);
 	
-	IPagingList<IPromotion> getPromotionPagingList();
+	IPagingList<IPromotion, IPromotionSort> getPromotionPagingList();
 	
 	ISchedule getOpenHours();
 	
