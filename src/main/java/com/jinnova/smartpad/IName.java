@@ -1,4 +1,4 @@
-package com.jinnova.smartpad.partner;
+package com.jinnova.smartpad;
 
 public interface IName {
 	

@@ -2,6 +2,8 @@ package com.jinnova.smartpad.partner;
 
 import java.math.BigDecimal;
 
+import com.jinnova.smartpad.IName;
+
 public interface ICatalogItem {
 	
 	IName getName();

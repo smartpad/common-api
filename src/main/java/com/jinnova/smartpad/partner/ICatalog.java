@@ -2,6 +2,8 @@ package com.jinnova.smartpad.partner;
 
 import java.sql.SQLException;
 
+import com.jinnova.smartpad.IName;
+
 public interface ICatalog {
 	
 	IName getName();

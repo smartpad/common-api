@@ -1,5 +1,7 @@
 package com.jinnova.smartpad.partner;
 
+import com.jinnova.smartpad.IPagingList;
+
 public interface IOperation {
 	
 	void setName(String name);
@@ -7,6 +9,10 @@ public interface IOperation {
 	String getName();
 	
 	ICatalog getRootCatalog();
+	
+	void setPromotionPageSize(int pageSize);
+	
+	IPagingList<IPromotion> getPromotionPagingList();
 	
 	ISchedule getOpenHours();
 	
