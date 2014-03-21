@@ -10,8 +10,6 @@ public interface IOperation {
 	
 	ICatalog getRootCatalog();
 	
-	void setPromotionPageSize(int pageSize);
-	
 	IPagingList<IPromotion, IPromotionSort> getPromotionPagingList();
 	
 	ISchedule getOpenHours();

@@ -2,6 +2,8 @@ package com.jinnova.smartpad.partner;
 
 import java.sql.SQLException;
 
+import com.jinnova.smartpad.IPagingList;
+
 public interface IUser {
 	
 	boolean isPrimary();
@@ -22,12 +24,6 @@ public interface IUser {
 
 	IOperation loadBranch() throws SQLException;
 
-	IOperation[] loadStores() throws SQLException;
-	
-	IOperation newStoreInstance();
-	
-	void putStore(IOperation store) throws SQLException;
-	
-	void deleteStore(IOperation store) throws SQLException;
+	IPagingList<IOperation, IOperationSort> getStorePagingList() throws SQLException;
 
 }
