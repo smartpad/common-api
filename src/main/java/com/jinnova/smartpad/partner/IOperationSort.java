@@ -4,5 +4,7 @@ public enum IOperationSort {
 
 	creation,
 	lastUpdate,
+	start,
+	end,
 	name
 }
