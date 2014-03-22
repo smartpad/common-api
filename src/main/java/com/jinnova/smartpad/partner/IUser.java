@@ -10,11 +10,11 @@ public interface IUser {
 
 	String getLogin();
 
-	//String getPasshash();
+	void setLogin(String login);
 
 	void setPassword(String password);
 
-	//String getBranchId();
+	IRecordInfo getRecordInfo();
 
 	/*
 	 * Branch APIs
