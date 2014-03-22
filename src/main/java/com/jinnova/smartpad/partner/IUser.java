@@ -4,7 +4,7 @@ import java.sql.SQLException;
 
 import com.jinnova.smartpad.IPagingList;
 
-public interface IUser {
+public interface IUser extends IRecordInfoHolder {
 	
 	boolean isPrimary();
 

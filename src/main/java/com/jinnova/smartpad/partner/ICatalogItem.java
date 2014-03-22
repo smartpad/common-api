@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 import com.jinnova.smartpad.IName;
 
-public interface ICatalogItem {
+public interface ICatalogItem extends IRecordInfoHolder {
 	
 	IName getName();
 	

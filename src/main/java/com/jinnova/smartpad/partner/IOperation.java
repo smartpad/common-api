@@ -3,7 +3,7 @@ package com.jinnova.smartpad.partner;
 import com.jinnova.smartpad.IName;
 import com.jinnova.smartpad.IPagingList;
 
-public interface IOperation {
+public interface IOperation extends IRecordInfoHolder {
 
 	IName getName();
 	

@@ -1,28 +1,15 @@
 package com.jinnova.smartpad.partner;
 
-import java.sql.SQLException;
-
 import com.jinnova.smartpad.IName;
+import com.jinnova.smartpad.IPagingList;
 
-public interface ICatalog {
+public interface ICatalog extends IRecordInfoHolder {
 	
 	IName getName();
-
-	ICatalog[] getSubCatalogs();
 	
-	ICatalogItem[] getItems();
+	IRecordInfo getRecordInfo();
 	
-	void loadChildren() throws SQLException;
+	IPagingList<ICatalog, ICatalogSort> getSubCatalogPagingList();
 	
-	ICatalog newSubCatalogInstance();
-	
-	ICatalogItem newCatalogItemInstance();
-	
-	void putSubCatalog(IUser authorizedUser, ICatalog cat) throws SQLException;
-	
-	void putCatalogItem(IUser authorizedUser, ICatalogItem item) throws SQLException;
-	
-	void delete(IUser authorizedUser, ICatalog cat);
-	
-	void delete(IUser authorizedUser, ICatalogItem item);
+	IPagingList<ICatalogItem, ICatalogItemSort> getCatalogItemPagingList();
 }

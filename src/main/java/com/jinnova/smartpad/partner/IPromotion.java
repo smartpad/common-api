@@ -1,14 +1,8 @@
 package com.jinnova.smartpad.partner;
 
-import java.util.Date;
-
 import com.jinnova.smartpad.IName;
 
-public interface IPromotion {
+public interface IPromotion extends IRecordInfoHolder {
 
 	IName getName();
-	
-	Date getCreationDate();
-	
-	Date getLastUpdate();
 }
