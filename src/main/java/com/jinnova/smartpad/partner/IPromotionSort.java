@@ -4,6 +4,7 @@ public enum IPromotionSort {
 
 	creation,
 	lastUpdate,
-	startDate,
-	endDate
+	name/*,
+	earliestStart,
+	latestEnd*/
 }

@@ -7,6 +7,8 @@ public interface IOperation {
 
 	IName getName();
 	
+	IRecordInfo getRecordInfo();
+	
 	ICatalog getRootCatalog();
 	
 	IPagingList<IPromotion, IPromotionSort> getPromotionPagingList();
