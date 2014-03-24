@@ -39,7 +39,7 @@ public interface IOperation extends IRecordInfoHolder {
 	
 	void setMemberLevels(String[] memberLevels);
 
-	Boolean isMemberNameRequired();
+	/*Boolean isMemberNameRequired();
 
 	void setMemberNameRequired(boolean memberNameRequired);
 
@@ -69,6 +69,6 @@ public interface IOperation extends IRecordInfoHolder {
 
 	Integer getMemberOfferedSurveyLevel();
 
-	void setMemberOfferedSurveyLevel(int memberOfferedSurveyLevel);
+	void setMemberOfferedSurveyLevel(int memberOfferedSurveyLevel);*/
 
 }
