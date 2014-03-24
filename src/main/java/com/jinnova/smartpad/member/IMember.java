@@ -6,8 +6,9 @@ import com.jinnova.smartpad.partner.ICatalogItem;
 import com.jinnova.smartpad.partner.IOperation;
 import com.jinnova.smartpad.partner.IPromotion;
 import com.jinnova.smartpad.partner.IPromotionSort;
+import com.jinnova.smartpad.partner.IRecordInfoHolder;
 
-public interface IMember {
+public interface IMember extends IRecordInfoHolder {
 
 	/**
 	 * @param operation

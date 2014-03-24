@@ -2,6 +2,7 @@ package com.jinnova.smartpad.partner;
 
 import com.jinnova.smartpad.IName;
 import com.jinnova.smartpad.IPagingList;
+import com.jinnova.smartpad.member.IMember;
 
 public interface IOperation extends IRecordInfoHolder {
 
@@ -38,6 +39,8 @@ public interface IOperation extends IRecordInfoHolder {
 	String[] getMemberLevels();
 	
 	void setMemberLevels(String[] memberLevels);
+	
+	IPagingList<IMember, IMemberSort> getMemberPagingList();
 
 	/*Boolean isMemberNameRequired();
 
