@@ -16,4 +16,6 @@ public interface IPartnerManager {
 	IUser login(String login, String password) throws SQLException;
 
 	IPagingList<IUser, IUserSort> getUserPagingList() throws SQLException;
+	
+	ICatalog getSystemCatalog();
 }

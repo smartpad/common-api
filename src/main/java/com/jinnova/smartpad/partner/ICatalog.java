@@ -12,4 +12,6 @@ public interface ICatalog extends IRecordInfoHolder {
 	IPagingList<ICatalog, ICatalogSort> getSubCatalogPagingList();
 	
 	IPagingList<ICatalogItem, ICatalogItemSort> getCatalogItemPagingList();
+	
+	ICatalog getSystemParent();
 }
