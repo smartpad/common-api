@@ -7,6 +7,8 @@ import com.jinnova.smartpad.IPagingList;
 public interface IPartnerManager {
 
 	void clearDatabaseForTests() throws SQLException;
+	
+	IUser getSystemUser();
 
 	/*
 	 * User APIs
@@ -17,5 +19,9 @@ public interface IPartnerManager {
 
 	IPagingList<IUser, IUserSort> getUserPagingList() throws SQLException;
 	
-	ICatalog getSystemCatalog();
+	ICatalog getSystemRootCatalog();
+	
+	ICatalog getSystemCatalog(String systemCatId);
+	
+	ICatalogSpec getCatalogSpec(String specId);
 }

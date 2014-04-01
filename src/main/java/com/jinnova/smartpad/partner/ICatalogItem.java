@@ -1,19 +1,23 @@
 package com.jinnova.smartpad.partner;
 
-import java.math.BigDecimal;
-
-import com.jinnova.smartpad.IName;
-
 public interface ICatalogItem extends IRecordInfoHolder {
 	
-	IName getName();
+	//IName getName();
 	
-	String getUnit();
+	//String getUnit();
 	
-	void setUnit(String unit);
+	//void setUnit(String unit);
 	
-	BigDecimal getUnitPrice();
+	//BigDecimal getUnitPrice();
 	
-	void setUnitPrice(BigDecimal price);
+	//void setUnitPrice(BigDecimal price);
+	
+	String getFieldValue(String fieldId);
+	
+	String[] getFieldValues(String fieldId);
+	
+	void setField(String fieldId, String value);
+	
+	void setField(String fieldId, String[] values);
 
 }

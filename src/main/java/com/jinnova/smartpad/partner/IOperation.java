@@ -12,6 +12,10 @@ public interface IOperation extends IRecordInfoHolder {
 	
 	ICatalog getRootCatalog();
 	
+	String getSystemCatalogId();
+	
+	void setSystemCatalogId(String systemCatalogId);
+	
 	IPagingList<IPromotion, IPromotionSort> getPromotionPagingList();
 	
 	ISchedule getOpenHours();
