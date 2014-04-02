@@ -15,5 +15,7 @@ public interface ICatalog extends IRecordInfoHolder {
 	
 	ICatalog getSystemCatalog();
 	
+	void setSystemCatalogId(String systemCatalogId);
+	
 	ICatalogSpec getCatalogSpec();
 }

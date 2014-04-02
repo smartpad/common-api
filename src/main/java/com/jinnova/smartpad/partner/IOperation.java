@@ -12,9 +12,9 @@ public interface IOperation extends IRecordInfoHolder {
 	
 	ICatalog getRootCatalog();
 	
-	String getSystemCatalogId();
+	//String getSystemCatalogId();
 	
-	void setSystemCatalogId(String systemCatalogId);
+	//void setSystemCatalogId(String systemCatalogId);
 	
 	IPagingList<IPromotion, IPromotionSort> getPromotionPagingList();
 	
