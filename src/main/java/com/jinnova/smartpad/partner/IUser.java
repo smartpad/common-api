@@ -22,7 +22,7 @@ public interface IUser extends IRecordInfoHolder {
 	 * */
 	void updateBranch() throws SQLException;
 
-	IOperation loadBranch() throws SQLException;
+	IOperation getBranch();
 
 	IPagingList<IOperation, IOperationSort> getStorePagingList() throws SQLException;
 
