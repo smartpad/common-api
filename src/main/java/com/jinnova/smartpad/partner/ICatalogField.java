@@ -4,7 +4,7 @@ public interface ICatalogField {
 	
 	static String ID_NAME = "name";
 
-	String getId();
+	String getId(); //column name
 	
 	void setId(String id);
 	

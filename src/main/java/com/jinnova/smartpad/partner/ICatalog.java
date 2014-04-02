@@ -5,6 +5,8 @@ import com.jinnova.smartpad.IPagingList;
 
 public interface ICatalog extends IRecordInfoHolder {
 	
+	String getId();
+	
 	IName getName();
 	
 	IRecordInfo getRecordInfo();
