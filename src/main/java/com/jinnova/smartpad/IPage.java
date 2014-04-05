@@ -10,5 +10,5 @@ public interface IPage<T> {
 	
 	int getOffset();
 	
-	T[] getMembers();
+	T[] getPageItems();
 }
