@@ -2,6 +2,8 @@ package com.jinnova.smartpad.partner;
 
 public interface ICatalogItem extends IRecordInfoHolder {
 	
+	String getId();
+	
 	//IName getName();
 	
 	//String getUnit();

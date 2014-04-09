@@ -5,6 +5,8 @@ import com.jinnova.smartpad.IPagingList;
 import com.jinnova.smartpad.member.IMember;
 
 public interface IOperation extends IRecordInfoHolder {
+	
+	String getId();
 
 	IName getName();
 	
