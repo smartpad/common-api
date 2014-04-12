@@ -3,6 +3,10 @@ package com.jinnova.smartpad.partner;
 public interface ICatalogField {
 	
 	static String ID_NAME = "name";
+	
+	static String GPS_LON = "gps_lon";
+	
+	static String GPS_LAT = "gps_lat";
 
 	String getId(); //column name
 	

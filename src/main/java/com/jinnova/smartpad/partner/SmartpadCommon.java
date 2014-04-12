@@ -7,11 +7,16 @@ import java.security.NoSuchAlgorithmException;
 
 public class SmartpadCommon {
 	
+	public static IPartnerManager partnerManager;
+	
+	public static IDetailManager detailManager;
+	
 	public static void initialize() {
 		try {
 			Class<?> c = Class.forName("com.jinnova.smartpad.partner.PartnerManager");
 			Method m = c.getMethod("initialize");
 			m.invoke(null);
+			detailManager = (IDetailManager) Class.forName("com.jinnova.smartpad.drilling.DetailManager").newInstance();
 		} catch (ClassNotFoundException e) {
 			throw new RuntimeException(e);
 		} catch (NoSuchMethodException e) {
@@ -20,7 +25,11 @@ public class SmartpadCommon {
 			throw new RuntimeException(e);
 		} catch (InvocationTargetException e) {
 			throw new RuntimeException(e);
+		} catch (InstantiationException e) {
+			throw new RuntimeException(e);
 		}
+		
+		partnerManager = getStaticField("com.jinnova.smartpad.partner.PartnerManager", "instance");
 	}
 
 	@SuppressWarnings("unchecked")
@@ -41,9 +50,9 @@ public class SmartpadCommon {
 		} 
 	}
 
-	public static IPartnerManager getPartnerManager() {
+	/*public static IPartnerManager getPartnerManager() {
 		return getStaticField("com.jinnova.smartpad.partner.PartnerManager", "instance");
-	}
+	}*/
 	
 	public static void main(String[] args) {
 		System.out.println(md5("abc123"));
