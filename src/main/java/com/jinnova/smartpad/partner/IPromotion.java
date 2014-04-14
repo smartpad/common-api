@@ -7,4 +7,6 @@ public interface IPromotion extends IRecordInfoHolder {
 	String getId();
 
 	IName getName();
+	
+	GPSInfo getGps();
 }

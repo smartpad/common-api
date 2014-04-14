@@ -21,6 +21,8 @@ public interface IDetailManager {
 	static String TYPENAME_PROMO = "pro";
 	
 	static String TYPENAME_POST = "post";
+	
+	static String TYPENAME_COMPOUND = "com";
 
 	String getDetail(int targetType, String targetId, String gpsLon, String gpsLat, int page) throws SQLException;
 	

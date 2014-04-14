@@ -22,13 +22,7 @@ public interface IOperation extends IRecordInfoHolder {
 	
 	ISchedule getOpenHours();
 	
-	long getGpsLon();
-
-	void setGpsLon(long gpsLon);
-
-	long getGpsLat();
-
-	void setGpsLat(long gpsLat);
+	GPSInfo getGps();
 
 	String getAddressLines();
 
