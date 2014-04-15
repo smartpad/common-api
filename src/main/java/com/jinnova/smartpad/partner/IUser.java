@@ -15,8 +15,6 @@ public interface IUser extends IRecordInfoHolder {
 	void setPassword(String password);
 
 	IRecordInfo getRecordInfo();
-	
-	GPSInfo getGps();
 
 	/*
 	 * Branch APIs

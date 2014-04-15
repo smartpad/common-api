@@ -14,6 +14,8 @@ public interface ICatalogItem extends IRecordInfoHolder {
 	
 	//void setUnitPrice(BigDecimal price);
 	
+	IGPSInfo getGps();
+	
 	String getFieldValue(String fieldId);
 	
 	String[] getFieldValues(String fieldId);

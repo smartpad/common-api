@@ -12,7 +12,7 @@ public interface IPagingList<T, E> {
 	
 	void setSortDirection(boolean ascending);
 	
-	T newMemberInstance(IUser authorizedUser);
+	T newEntryInstance(IUser authorizedUser);
 	
 	IPage<T> loadPage(IUser authorizedUser, int pageNumber) throws SQLException;
 	
