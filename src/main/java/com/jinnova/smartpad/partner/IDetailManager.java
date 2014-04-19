@@ -12,22 +12,16 @@ public interface IDetailManager {
 	static final String FIELD_ACTION_LOADNEXT = "ALN";
 	
 	static int TYPE_BRANCH = 0;
-	
 	static int TYPE_STORE = 1;
-	
 	static int TYPE_COUNT = 2;
 	
 	static String TYPENAME_BRANCH = "branch";
-	
 	static String TYPENAME_STORE = "store";
-	
 	static String TYPENAME_CAT = "cat";
-	
 	static String TYPENAME_CATITEM = "citem";
-	
 	static String TYPENAME_PROMO = "pro";
-	
 	static String TYPENAME_POST = "post";
+	static String TYPENAME_SYSCAT = "syscat";
 	
 	static String TYPENAME_COMPOUND_BRANCHSTORE = "com.branch";
 	static String TYPENAME_COMPOUND_CAT = "com.cat";
