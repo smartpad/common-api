@@ -13,7 +13,10 @@ public interface IDetailManager {
 	
 	static int TYPE_BRANCH = 0;
 	static int TYPE_STORE = 1;
-	static int TYPE_COUNT = 2;
+	static int TYPE_CAT = 2;
+	static int TYPE_CATITEM = 3;
+	static int TYPE_PROMO = 4;
+	static int TYPE_COUNT = 5;
 	
 	static String TYPENAME_BRANCH = "branch";
 	static String TYPENAME_STORE = "store";
@@ -22,7 +25,8 @@ public interface IDetailManager {
 	static String TYPENAME_PROMO = "pro";
 	static String TYPENAME_POST = "post";
 	static String TYPENAME_SYSCAT = "syscat";
-	
+
+	static String TYPENAME_COMPOUND = "com.branch";
 	static String TYPENAME_COMPOUND_BRANCHSTORE = "com.branch";
 	static String TYPENAME_COMPOUND_CAT = "com.cat";
 	static String TYPENAME_COMPOUND_CITEM = "com.citem";
