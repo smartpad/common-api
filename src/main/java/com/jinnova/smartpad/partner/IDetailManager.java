@@ -10,14 +10,16 @@ public interface IDetailManager {
 	static final String FIELD_PAGE = "P";
 	static final String FIELD_SIZE = "S";
 	static final String FIELD_ACTION_LOADNEXT = "ALN";
-	
-	static int TYPE_BRANCH = 0;
-	static int TYPE_STORE = 1;
-	static int TYPE_CAT = 2;
-	static int TYPE_CATITEM = 3;
-	static int TYPE_PROMO = 4;
-	static int TYPE_COUNT = 5;
-	
+
+	static int TYPE_NO = 0;
+	static int TYPE_BRANCH = 1;
+	static int TYPE_STORE = 2;
+	static int TYPE_CAT = 3;
+	static int TYPE_CATITEM = 4;
+	static int TYPE_PROMO = 5;
+	static int TYPE_COUNT = 6;
+
+	static String TYPENAME_NO = null;
 	static String TYPENAME_BRANCH = "branch";
 	static String TYPENAME_STORE = "store";
 	static String TYPENAME_CAT = "cat";
@@ -26,7 +28,7 @@ public interface IDetailManager {
 	static String TYPENAME_POST = "post";
 	static String TYPENAME_SYSCAT = "syscat";
 	
-	//static String[] TYPENAMES = new String[] {TYPENAME_BRANCH, TYPENAME_STORE, TYPENAME_CAT, TYPENAME_CATITEM, TYPENAME_PROMO};
+	//static String[] TYPENAMES = new String[] {TYPENAME_NO, TYPENAME_BRANCH, TYPENAME_STORE, TYPENAME_CAT, TYPENAME_CATITEM, TYPENAME_PROMO};
 
 	static String TYPENAME_COMPOUND = "com.branch";
 	static String TYPENAME_COMPOUND_BRANCHSTORE = "com.branch";
