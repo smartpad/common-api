@@ -3,6 +3,7 @@ package com.jinnova.smartpad.partner;
 public interface ICatalogField {
 	
 	static String ID_NAME = "name";
+	static String ID_DESC = "descript";
 	
 	static String GPS_LON = "gps_lon";
 	
