@@ -1,12 +1,14 @@
 package com.jinnova.smartpad.partner;
 
+import java.math.BigDecimal;
+
 public interface IGPSInfo {
 	
-	float getLongitude();
+	BigDecimal getLongitude();
 	
-	void setLongitude(float f);
+	void setLongitude(BigDecimal f);
 	
-	float getLatitude();
+	BigDecimal getLatitude();
 	
-	void setLatitude(float f);
+	void setLatitude(BigDecimal f);
 }
