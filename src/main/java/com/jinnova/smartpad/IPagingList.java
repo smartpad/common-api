@@ -6,11 +6,11 @@ import com.jinnova.smartpad.partner.IUser;
 
 public interface IPagingList<T, E> {
 	
-	void setPageSize(int pageSize);
+	IPagingList<T, E> setPageSize(int pageSize);
 	
-	void setSortField(E e);
+	IPagingList<T, E> setSortField(E e);
 	
-	void setSortDirection(boolean ascending);
+	IPagingList<T, E> setSortDirection(boolean ascending);
 	
 	T newEntryInstance(IUser authorizedUser);
 	
