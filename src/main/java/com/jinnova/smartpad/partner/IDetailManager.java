@@ -39,9 +39,9 @@ public interface IDetailManager {
 	static String TYPENAME_COMPOUND_CITEM = "com.citem";
 	static String TYPENAME_COMPOUND_PROMOS = "com.promo";
 
-	String drill(String targetType, String targetId, String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
+	String drill(String clusterId, String targetType, String targetId, String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
 
-	String more(String targetType, String anchorType, String anchorId, String relation,
+	String more(String clusterId, String targetType, String anchorType, String anchorId, String relation,
 			String branchId, String storeId, String catId, String syscatId, String excludeId,
 			String gpsLon, String gpsLat, int offset, int size) throws SQLException;
 	
