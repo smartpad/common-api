@@ -2,9 +2,9 @@ package com.jinnova.smartpad.partner;
 
 public interface ISchedule {
 	
-	String getText();
+	String getDesc();
 	
-	void setText(String text);
+	void setDesc(String desc);
 	
 	IScheduleSequence newScheduleSequenceInstance();
 	
