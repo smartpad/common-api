@@ -10,14 +10,17 @@ public interface IDetailManager {
 	static final String FIELD_PAGE = "P";
 	static final String FIELD_SIZE = "S";
 	static final String FIELD_ACTION_LOADNEXT = "ALN";
+	
+	static String SYSTEM_BRANCH_ID = "z";
 
-	static int TYPE_NO = 0;
+	//static int TYPE_NO = 0;
 	static int TYPE_BRANCH = 1;
 	static int TYPE_STORE = 2;
 	static int TYPE_CAT = 3;
 	static int TYPE_CATITEM = 4;
 	static int TYPE_PROMO = 5;
-	static int TYPE_COUNT = 6;
+	static int TYPE_SYSCAT = 6;
+	static int TYPE_COUNT = 7;
 
 	static String TYPENAME_NO = null;
 	static String TYPENAME_BRANCH = "branch";
