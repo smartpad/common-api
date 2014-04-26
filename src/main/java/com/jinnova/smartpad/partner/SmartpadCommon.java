@@ -11,11 +11,11 @@ public class SmartpadCommon {
 	
 	public static IDetailManager detailManager;
 	
-	public static void initialize() {
+	public static void initialize(String dbhost, String dbport, String dbname, String dblogin, String dbpass) {
 		try {
 			Class<?> c = Class.forName("com.jinnova.smartpad.partner.PartnerManager");
-			Method m = c.getMethod("initialize");
-			m.invoke(null);
+			Method m = c.getMethod("initialize", String.class, String.class, String.class, String.class, String.class);
+			m.invoke(null, dbhost, dbport, dbname, dblogin, dbpass);
 			detailManager = (IDetailManager) Class.forName("com.jinnova.smartpad.drilling.DetailManager").newInstance();
 		} catch (ClassNotFoundException e) {
 			throw new RuntimeException(e);

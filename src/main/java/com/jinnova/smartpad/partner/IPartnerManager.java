@@ -1,14 +1,12 @@
 package com.jinnova.smartpad.partner;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.sql.SQLException;
 
 import com.jinnova.smartpad.IPagingList;
 
 public interface IPartnerManager {
 
-	void clearDatabaseForTests() throws SQLException, FileNotFoundException, IOException;
+	//void clearDatabaseForTests() throws SQLException, FileNotFoundException, IOException;
 	
 	IUser getSystemUser();
 
