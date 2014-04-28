@@ -9,14 +9,14 @@ public class SmartpadCommon {
 	
 	public static IPartnerManager partnerManager;
 	
-	public static IDetailManager detailManager;
+	//public static IDetailManager detailManager;
 	
 	public static void initialize(String dbhost, String dbport, String dbname, String dblogin, String dbpass) {
 		try {
 			Class<?> c = Class.forName("com.jinnova.smartpad.partner.PartnerManager");
 			Method m = c.getMethod("initialize", String.class, String.class, String.class, String.class, String.class);
 			m.invoke(null, dbhost, dbport, dbname, dblogin, dbpass);
-			detailManager = (IDetailManager) Class.forName("com.jinnova.smartpad.drilling.DetailManager").newInstance();
+			//detailManager = (IDetailManager) Class.forName("com.jinnova.smartpad.drilling.DetailManager").newInstance();
 		} catch (ClassNotFoundException e) {
 			throw new RuntimeException(e);
 		} catch (NoSuchMethodException e) {
@@ -25,9 +25,9 @@ public class SmartpadCommon {
 			throw new RuntimeException(e);
 		} catch (InvocationTargetException e) {
 			throw new RuntimeException(e);
-		} catch (InstantiationException e) {
+		} /*catch (InstantiationException e) {
 			throw new RuntimeException(e);
-		}
+		}*/
 		
 		partnerManager = getStaticField("com.jinnova.smartpad.partner.PartnerManager", "instance");
 	}
