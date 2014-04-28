@@ -15,8 +15,8 @@ public interface IOperation extends IRecordInfoHolder {
 	ICatalog getRootCatalog();
 	
 	//String getSystemCatalogId();
-	
-	//void setSystemCatalogId(String systemCatalogId);
+
+	void setSystemCatalogId(String syscatId);
 	
 	IPagingList<IPromotion, IPromotionSort> getPromotionPagingList();
 	

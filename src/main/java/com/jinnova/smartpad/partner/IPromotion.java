@@ -8,5 +8,7 @@ public interface IPromotion extends IRecordInfoHolder {
 
 	IName getName();
 	
+	ISchedule getSchedule();
+	
 	IGPSInfo getGps();
 }
