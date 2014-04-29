@@ -9,9 +9,15 @@ public interface IDetailManager {
 	static final String FIELD_ARRAY = "A";
 	static final String FIELD_PAGE = "P";
 	static final String FIELD_SIZE = "S";
+	static final String FIELD_ID = "ID";
+	static final String FIELD_SYSCATID = "SC";
+	static final String FIELD_NAME = "N";
+	static final String FIELD_DESC = "D";
 	static final String FIELD_ACTION_LOADNEXT = "ALN";
 	
-	static String SYSTEM_BRANCH_ID = "z";
+	static String SYSTEM_BRANCH_ID = "smartpad";
+	
+	static String CLUSPRE = "z";
 
 	//static int TYPE_NO = 0;
 	static int TYPE_BRANCH = 1;
@@ -39,7 +45,7 @@ public interface IDetailManager {
 	static String TYPENAME_COMPOUND_CITEM = "com.citem";
 	static String TYPENAME_COMPOUND_PROMOS = "com.promo";
 
-	String drill(String uid, String targetType, String targetId, String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
+	String drill(String uid, String targetType, String targetId, String targetSyscat, String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
 
 	String more(int clusterId, String targetType, String anchorType, String anchorId, String relation,
 			String branchId, String storeId, String catId, String syscatId, String excludeId,
