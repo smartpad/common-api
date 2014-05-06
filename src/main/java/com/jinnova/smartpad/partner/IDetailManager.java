@@ -4,16 +4,21 @@ import java.sql.SQLException;
 
 public interface IDetailManager {
 
+	static final String FIELD_ACTION_LOADNEXT = "ALN";
 	static final String FIELD_VERSION = "V";
 	static final String FIELD_TYPE = "T";
 	static final String FIELD_ARRAY = "A";
 	static final String FIELD_PAGE = "P";
 	static final String FIELD_SIZE = "S";
 	static final String FIELD_ID = "ID";
-	static final String FIELD_SYSCATID = "SC";
+	static final String FIELD_SYSCATID = "SCI";
+	static final String FIELD_SYSCATNAME = "SCN";
 	static final String FIELD_NAME = "N";
 	static final String FIELD_DESC = "D";
-	static final String FIELD_ACTION_LOADNEXT = "ALN";
+	static final String FIELD_BRANCHID = "BI";
+	static final String FIELD_BRANCHNAME = "BN";
+	static final String FIELD_CATID = "CI";
+	static final String FIELD_CATNAME = "CN";
 	
 	static String SYSTEM_BRANCH_ID = "smartpad";
 	static String SYSTEM_CAT_ALL = "z";
@@ -33,6 +38,7 @@ public interface IDetailManager {
 	static String TYPENAME_STORE = "store";
 	static String TYPENAME_CAT = "cat";
 	static String TYPENAME_CATITEM = "citem";
+	//static String TYPENAME_CATITEM_WITHBRANCH = "citem_b";
 	static String TYPENAME_PROMO = "pro";
 	static String TYPENAME_POST = "post";
 	static String TYPENAME_SYSCAT = "syscat";
@@ -49,6 +55,7 @@ public interface IDetailManager {
 
 	String more(int clusterId, String targetType, String anchorType, String anchorId, String relation,
 			String branchId, String storeId, String catId, String syscatId, String excludeId,
-			boolean recursive, String gpsLon, String gpsLat, int offset, int size) throws SQLException;
+			boolean recursive, String gpsLon, String gpsLat, int offset, int size, 
+			int layoutOptions, String layoutSyscat) throws SQLException;
 	
 }

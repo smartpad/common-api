@@ -7,7 +7,11 @@ public interface ICatalog extends IRecordInfoHolder {
 	
 	String getId();
 	
-	IName getName();
+	IName getDesc();
+	
+	String getName();
+	
+	void setName(String name);
 	
 	IRecordInfo getRecordInfo();
 	

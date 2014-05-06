@@ -7,8 +7,12 @@ import com.jinnova.smartpad.member.IMember;
 public interface IOperation extends IRecordInfoHolder {
 	
 	String getId();
+	
+	IName getDesc();
 
-	IName getName();
+	String getName();
+	
+	void setName(String name);
 	
 	IRecordInfo getRecordInfo();
 	

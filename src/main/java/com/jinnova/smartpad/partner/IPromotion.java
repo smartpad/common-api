@@ -6,7 +6,11 @@ public interface IPromotion extends IRecordInfoHolder {
 	
 	String getId();
 
-	IName getName();
+	IName getDesc();
+	
+	String getName();
+	
+	void setName(String name);
 	
 	ISchedule getSchedule();
 	
