@@ -4,8 +4,8 @@ public enum ICatalogFieldType {
 	
 	Boolean("tinyint"),
 	Int("int"),
-	Decimal("12, 2"),
-	Text_ID("varchar(32"), //32 charater
+	Decimal("decimal(12, 2)"),
+	Text_ID("varchar(32)"), //32 charater
 	Text_Name("mediumtext"), //sql medium text
 	Text_Desc("text"); //sql text
 	

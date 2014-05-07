@@ -19,6 +19,8 @@ public interface IDetailManager {
 	static final String FIELD_BRANCHNAME = "BN";
 	static final String FIELD_CATID = "CI";
 	static final String FIELD_CATNAME = "CN";
+	static final String FIELD_UP_ID = "UI";
+	static final String FIELD_UP_NAME = "UN";
 	
 	static String SYSTEM_BRANCH_ID = "smartpad";
 	static String SYSTEM_CAT_ALL = "z";
