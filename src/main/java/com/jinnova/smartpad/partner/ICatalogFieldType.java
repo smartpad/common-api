@@ -7,7 +7,8 @@ public enum ICatalogFieldType {
 	Decimal("decimal(12, 2)"),
 	Text_ID("varchar(32)"), //32 charater
 	Text_Name("mediumtext"), //sql medium text
-	Text_Desc("text"); //sql text
+	Text_Desc("text"), //sql text
+	Text_URL("text"); //sql text
 	
 	public final String sqlType;
 	

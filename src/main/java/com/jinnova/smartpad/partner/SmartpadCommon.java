@@ -100,4 +100,14 @@ public class SmartpadCommon {
 	private static double deg2rad(double deg) {
 		  return deg * (Math.PI/180);
 	}
+
+	public static String standarizeIdentity(String id) {
+		id = id.trim();
+		id = id.toUpperCase();
+		id = id.replaceAll(" ", "_");
+		while (id.contains("__")) {
+			id = id.replaceAll("__", "_");
+		}
+		return id;
+	}
 }

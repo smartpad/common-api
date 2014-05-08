@@ -2,12 +2,17 @@ package com.jinnova.smartpad.partner;
 
 public interface ICatalogField {
 	
-	static String ID_NAME = "name";
-	static String ID_DESC = "descript";
+	static String F_NAME = "name";
+	static String F_DESC = "descript";
+
+	//static String F_BRAN_ID = "bran_id";
+	//static String F_BRAN_N = "bran_n";
+	//static String F_BRAN_DESC = "bran_desc";
+	//static String F_BRAN_IMG = "bran_img";
+	//static String F_BRAN_LOGO = "bran_logo";
 	
-	static String GPS_LON = "gps_lon";
-	
-	static String GPS_LAT = "gps_lat";
+	static String F_GLON = "glon";
+	static String F_GLAT = "glat";
 
 	String getId(); //column name
 	
