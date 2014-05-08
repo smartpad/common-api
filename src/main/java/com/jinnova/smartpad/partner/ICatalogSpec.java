@@ -6,6 +6,8 @@ public interface ICatalogSpec {
 	
 	void setSpecId(String specId);
 	
+	void setReferTo(String referTo);
+	
 	ICatalogField createField();
 
 	ICatalogField[] getAllFields();
