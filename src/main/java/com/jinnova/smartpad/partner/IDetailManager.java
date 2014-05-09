@@ -44,6 +44,7 @@ public interface IDetailManager {
 	static String TYPENAME_PROMO = "pro";
 	static String TYPENAME_POST = "post";
 	static String TYPENAME_SYSCAT = "syscat";
+	static String TYPENAME_SEGMENT = "segment";
 	
 	//static String[] TYPENAMES = new String[] {TYPENAME_NO, TYPENAME_BRANCH, TYPENAME_STORE, TYPENAME_CAT, TYPENAME_CATITEM, TYPENAME_PROMO};
 	//RULE: Singular type name + s

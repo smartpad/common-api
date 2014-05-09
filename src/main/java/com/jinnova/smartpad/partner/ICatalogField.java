@@ -4,6 +4,10 @@ public interface ICatalogField {
 	
 	static String F_NAME = "name";
 	static String F_DESC = "descript";
+	
+	public static final int GROUPING_NONE = 0;
+	public static final int GROUPING_DISTINCT = 1;
+	public static final int GROUPING_RANGE = 2;
 
 	//static String F_BRAN_ID = "bran_id";
 	//static String F_BRAN_N = "bran_n";
@@ -25,6 +29,8 @@ public interface ICatalogField {
 	boolean isMultivalue();
 	
 	void setMultivalue(boolean b);
+	
+	void setGroupingType(int groupingType);
 	
 	int getSectionNumber();
 	
