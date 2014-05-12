@@ -1,6 +1,7 @@
 package com.jinnova.smartpad.partner;
 
 import java.sql.SQLException;
+import java.util.List;
 
 public interface IDetailManager {
 
@@ -54,7 +55,8 @@ public interface IDetailManager {
 	static String TYPENAME_COMPOUND_CITEM = "citems";
 	static String TYPENAME_COMPOUND_PROMOS = "pros";
 
-	String drill(String uid, String targetType, String targetId, String targetSyscat, String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
+	String drill(String uid, String targetType, String targetId, String targetSyscat, List<String> segments, 
+			String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
 
 	String more(int clusterId, String targetType, String anchorType, String anchorId, String relation,
 			String branchId, String storeId, String catId, String syscatId, String excludeId,
