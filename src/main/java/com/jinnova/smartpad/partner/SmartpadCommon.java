@@ -110,4 +110,32 @@ public class SmartpadCommon {
 		}
 		return id;
 	}
+	
+	public static String replace(String s, ReplaceSupport support) {
+		
+		StringBuffer result = new StringBuffer();
+		StringBuffer term = null;
+		for (int i = 0; i < s.length(); i++) {
+			char c = s.charAt(i);
+			if (c == '{') {
+				term = new StringBuffer();
+				continue;
+			}
+			if (c == '}') {
+				String replacedText = support.getTerm(term.toString());
+				if (replacedText != null) {
+					result.append(replacedText);
+				}
+				term = null;
+				continue;
+			}
+			
+			if (term == null) {
+				result.append(c);
+			} else {
+				term.append(c);
+			}
+		}
+		return result.toString();
+	}
 }

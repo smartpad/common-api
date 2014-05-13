@@ -22,6 +22,13 @@ public interface IDetailManager {
 	static final String FIELD_CATNAME = "CN";
 	static final String FIELD_UP_ID = "UI";
 	static final String FIELD_UP_NAME = "UN";
+	static final String FIELD_DISP = "DISP";
+
+	static final String FIELD_SEGMENT = "SEGMENTS";
+	static final String FIELD_SEGMENT_FIELDID = "SFID";
+	static final String FIELD_SEGMENT_FIELDNAME = "SFN";
+	static final String FIELD_SEGMENT_VALUE = "SV";
+	static final String FIELD_SEGMENT_VALUEID = "SVID";
 	
 	static String SYSTEM_BRANCH_ID = "smartpad";
 	static String SYSTEM_CAT_ALL = "z";

@@ -5,9 +5,15 @@ public interface ICatalogField {
 	static String F_NAME = "name";
 	static String F_DESC = "descript";
 	
-	public static final int GROUPING_NONE = 0;
-	public static final int GROUPING_DISTINCT = 1;
-	public static final int GROUPING_RANGE = 2;
+	public static final int SEGMENT_NONE = 0;
+	public static final int SEGMENT_DISTINCT = 1;
+	public static final int SEGMENT_RANGE = 2;
+	
+	public static final char SEGMENT_PARAM_SEP = ':';
+	
+	public static final String SEGMENT_POSTFIX = "_id";
+	
+	//public static final String GROUPING_SUBSTITUTE_ESCAPE = "_";
 
 	//static String F_BRAN_ID = "bran_id";
 	//static String F_BRAN_N = "bran_n";
