@@ -29,6 +29,7 @@ public interface IDetailManager {
 	static final String FIELD_SEGMENT_FIELDNAME = "SFN";
 	static final String FIELD_SEGMENT_VALUE = "SV";
 	static final String FIELD_SEGMENT_VALUEID = "SVID";
+	static final String FIELD_SEGMENT_LINK = "SL";
 	
 	static String SYSTEM_BRANCH_ID = "smartpad";
 	static String SYSTEM_CAT_ALL = "z";
@@ -68,6 +69,6 @@ public interface IDetailManager {
 	String more(int clusterId, String targetType, String anchorType, String anchorId, String relation,
 			String branchId, String storeId, String catId, String syscatId, String excludeId,
 			boolean recursive, String gpsLon, String gpsLat, int offset, int size, 
-			int layoutOptions, String layoutSyscat) throws SQLException;
+			int layoutOptions, String excludeSyscat) throws SQLException;
 	
 }
