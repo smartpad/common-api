@@ -24,7 +24,8 @@ public interface IDetailManager {
 	static final String FIELD_UP_NAME = "UN";
 	static final String FIELD_DISP = "DISP";
 
-	static final String FIELD_SEGMENT = "SEGMENTS";
+	static final String FIELD_SEGMENT = "SEG";
+	static final String FIELD_SEGMENT_REMOVER = "SEG_DEL";
 	static final String FIELD_SEGMENT_FIELDID = "SFID";
 	static final String FIELD_SEGMENT_FIELDNAME = "SFN";
 	static final String FIELD_SEGMENT_VALUE = "SV";
