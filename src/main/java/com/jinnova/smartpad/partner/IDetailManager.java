@@ -5,9 +5,15 @@ import java.util.List;
 
 public interface IDetailManager {
 
+	static final String REST_FEEDS = "feeds";
+
+	static final String VERSIONING_TARGET = "T";
+	static final String VERSIONING_NEW = "N";
+
 	static final String FIELD_ACTION_LOADNEXT = "ALN";
 	static final String FIELD_VERSION = "V";
 	static final String FIELD_TYPE = "T";
+	static final String FIELD_TYPENUM = "TN";
 	static final String FIELD_ARRAY = "A";
 	static final String FIELD_PAGE = "P";
 	static final String FIELD_SIZE = "S";
@@ -36,6 +42,7 @@ public interface IDetailManager {
 	static String SYSTEM_CAT_ALL = "z";
 	static String CLUSPRE = "z";
 
+	static int TYPE_UNKNOWN = -1;
 	//static int TYPE_NO = 0;
 	static int TYPE_BRANCH = 1;
 	static int TYPE_STORE = 2;
@@ -43,7 +50,9 @@ public interface IDetailManager {
 	static int TYPE_CATITEM = 4;
 	static int TYPE_PROMO = 5;
 	static int TYPE_SYSCAT = 6;
-	static int TYPE_COUNT = 7;
+	static int TYPE_POST = 7;
+	static int TYPE_COMPOUND = 8;
+	static int TYPE_COUNT = 9;
 
 	static String TYPENAME_NO = null;
 	static String TYPENAME_BRANCH = "branch";
