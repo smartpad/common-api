@@ -68,7 +68,7 @@ public interface IDetailManager {
 			String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
 
 	String more(int clusterId, String targetType, String anchorType, String anchorId, String relation,
-			String branchId, String storeId, String catId, String syscatId, String excludeId,
+			String branchId, String storeId, String catId, String syscatId, String excludeId, List<String> segments,
 			boolean recursive, String gpsLon, String gpsLat, int offset, int size, 
 			int layoutOptions, String excludeSyscat) throws SQLException;
 	
