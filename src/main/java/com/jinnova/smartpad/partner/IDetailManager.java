@@ -5,6 +5,7 @@ import java.util.List;
 
 public interface IDetailManager {
 
+	static final String REST_SCHEME = "smartpad://";
 	static final String REST_FEEDS = "feeds";
 	static final String REST_DRILL = "drill";
 
