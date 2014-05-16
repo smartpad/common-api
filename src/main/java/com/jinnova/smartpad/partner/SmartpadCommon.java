@@ -4,8 +4,11 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.StringTokenizer;
 
 public class SmartpadCommon {
+	
+	public static final String SUBSTITUTION_SEP = "#";
 	
 	public static IPartnerManager partnerManager;
 	
@@ -113,6 +116,18 @@ public class SmartpadCommon {
 	
 	public static String replace(String s, ReplaceSupport support) {
 		
+		StringBuffer buffer = new StringBuffer();
+		StringTokenizer tokens = new StringTokenizer(s, SUBSTITUTION_SEP, false);
+		while (tokens.hasMoreTokens()) {
+			String one = replaceOne(tokens.nextToken(), support);
+			if (one != null) {
+				buffer.append(one);
+			}
+		}
+		return buffer.toString();
+	}
+	
+	private static String replaceOne(String s, ReplaceSupport support) {	
 		StringBuffer result = new StringBuffer();
 		StringBuffer term = null;
 		for (int i = 0; i < s.length(); i++) {
@@ -123,9 +138,10 @@ public class SmartpadCommon {
 			}
 			if (c == '}') {
 				String replacedText = support.getTerm(term.toString());
-				if (replacedText != null) {
-					result.append(replacedText);
+				if (replacedText == null) {
+					return null;
 				}
+				result.append(replacedText);
 				term = null;
 				continue;
 			}
