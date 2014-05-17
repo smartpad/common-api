@@ -81,6 +81,6 @@ public interface IDetailManager {
 	String more(int clusterId, String targetType, String anchorType, String anchorId, String relation,
 			String branchId, String storeId, String catId, String syscatId, String excludeId, List<String> segments,
 			boolean recursive, String gpsLon, String gpsLat, int offset, int size, 
-			int layoutOptions, String excludeSyscat) throws SQLException;
+			int layoutOptions, String excludeSyscat, String excludeCat) throws SQLException;
 	
 }
