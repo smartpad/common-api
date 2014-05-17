@@ -1,7 +1,5 @@
 package com.jinnova.smartpad.partner;
 
-import static com.jinnova.smartpad.partner.IDetailManager.REST_DRILL;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.security.MessageDigest;
@@ -155,12 +153,5 @@ public class SmartpadCommon {
 			}
 		}
 		return result.toString();
-	}
-	
-	public static String makeDrillLink(String linkPrefix, String typeName, String id, String name, String linkPostfix) {
-		if (linkPostfix == null) {
-			linkPostfix = "";
-		}
-		return "<a href='" + linkPrefix + "/" + typeName + "/" + id + "/" + REST_DRILL + linkPostfix + "'>" + name + "</a>";
 	}
 }
