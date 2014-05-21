@@ -14,11 +14,12 @@ public class SmartpadCommon {
 	
 	//public static IDetailManager detailManager;
 	
-	public static void initialize(String dbhost, String dbport, String dbname, String dblogin, String dbpass) {
+	public static void initialize(String dbhost, String dbport, String dbname, String dblogin, String dbpass,
+			String imageInQueuePath, String imageOutRoot) {
 		try {
 			Class<?> c = Class.forName("com.jinnova.smartpad.partner.PartnerManager");
-			Method m = c.getMethod("initialize", String.class, String.class, String.class, String.class, String.class);
-			m.invoke(null, dbhost, dbport, dbname, dblogin, dbpass);
+			Method m = c.getMethod("initialize", String.class, String.class, String.class, String.class, String.class, String.class, String.class);
+			m.invoke(null, dbhost, dbport, dbname, dblogin, dbpass, imageInQueuePath, imageOutRoot);
 			//detailManager = (IDetailManager) Class.forName("com.jinnova.smartpad.drilling.DetailManager").newInstance();
 		} catch (ClassNotFoundException e) {
 			throw new RuntimeException(e);

@@ -75,6 +75,10 @@ public interface IDetailManager {
 	static String TYPENAME_COMPOUND_CAT = "cats";
 	static String TYPENAME_COMPOUND_CITEM = "citems";
 	static String TYPENAME_COMPOUND_PROMOS = "pros";
+	
+	static final String IMG_LOGO_SQUARE = "logo-square";
+	static final String IMG_LOGO_WIDERECT = "logo-widerect";
+	static final String IMG_LOGO_TALLRECT = "logo-tallrect";
 
 	String drill(String uid, String targetType, String targetId, String targetSyscat, List<String> segments, 
 			String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
