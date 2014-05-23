@@ -8,6 +8,8 @@ public interface ICatalogSpec {
 	
 	String getSpecId(); //table name
 	
+	//boolean isManaged();
+	
 	void setSpecId(String specId);
 	
 	void setReferTo(String referTo);
