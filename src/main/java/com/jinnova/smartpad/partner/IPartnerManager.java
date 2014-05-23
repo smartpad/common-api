@@ -2,7 +2,6 @@ package com.jinnova.smartpad.partner;
 
 import java.awt.image.BufferedImage;
 import java.io.IOException;
-import java.io.InputStream;
 import java.sql.SQLException;
 
 import com.jinnova.smartpad.IPagingList;
@@ -28,7 +27,7 @@ public interface IPartnerManager {
 	
 	ICatalogSpec getCatalogSpec(String specId);
 	
-	void setImage(String typeName, String subTypeName, String entityId, String imageId, InputStream image) throws IOException;
+	//void setImage(String typeName, String subTypeName, String entityId, String imageId, InputStream image) throws IOException;
 	
 	BufferedImage getImage(String typeName, String subTypeName, String entityId, String imageId, int size) throws IOException;
 }

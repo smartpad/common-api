@@ -1,5 +1,8 @@
 package com.jinnova.smartpad;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 public interface IName {
 	
 	//String getName();
@@ -10,8 +13,13 @@ public interface IName {
 	
 	void setDescription(String desc);
 	
-	String[] getImages();
+	String[] getImages(String imageId, int size);
 	
-	void setImages(String[] images);
+	String getImage(String imageId, int size);
+	
+	void setImage(String imageId, InputStream image) throws IOException;
+	
+	//void setImages(String[] images);
+	//void setImage(String imageId, InputStream image);
 
 }

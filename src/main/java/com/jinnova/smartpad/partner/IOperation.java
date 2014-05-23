@@ -14,6 +14,8 @@ public interface IOperation extends IRecordInfoHolder {
 	
 	void setName(String name);
 	
+	//void setImage(String imageId, InputStream image) throws IOException;
+	
 	IRecordInfo getRecordInfo();
 	
 	ICatalog getRootCatalog();
