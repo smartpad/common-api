@@ -28,4 +28,6 @@ public interface ICatalogItem extends IRecordInfoHolder {
 	
 	void setField(String fieldId, String[] values);
 
+	void setSystemCatalogId(String sysid);
+
 }
