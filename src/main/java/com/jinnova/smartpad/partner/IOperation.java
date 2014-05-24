@@ -6,6 +6,10 @@ import com.jinnova.smartpad.member.IMember;
 
 public interface IOperation extends IRecordInfoHolder {
 	
+	static final String BRANCH_TYPE_UNMANAGED = "unmanaged";
+	static final String BRANCH_TYPE_OPEN = "open";
+	static final String BRANCH_TYPE_CLOSED = "closed";
+	
 	String getId();
 	
 	IName getDesc();
