@@ -27,6 +27,8 @@ public interface IPartnerManager {
 	
 	ICatalogSpec getCatalogSpec(String specId);
 	
+	IPagingList<ICatalogItem, ICatalogItemSort> createSyscatItemPagingList(String syscatId);
+	
 	//void setImage(String typeName, String subTypeName, String entityId, String imageId, InputStream image) throws IOException;
 	
 	BufferedImage getImage(String typeName, String subTypeName, String entityId, String imageId, int size) throws IOException;

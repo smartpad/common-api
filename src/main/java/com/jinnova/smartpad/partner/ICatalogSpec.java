@@ -8,7 +8,7 @@ public interface ICatalogSpec {
 	
 	String getSpecId(); //table name
 	
-	//boolean isManaged();
+	boolean isManaged();
 	
 	void setSpecId(String specId);
 	
