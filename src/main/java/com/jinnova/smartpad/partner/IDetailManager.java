@@ -23,6 +23,7 @@ public interface IDetailManager {
 	static final String FIELD_SYSCATID = "SCI";
 	static final String FIELD_SYSCATNAME = "SCN";
 	static final String FIELD_NAME = "N";
+	static final String FIELD_LINK = "LINK";
 	static final String FIELD_DESC = "D";
 	static final String FIELD_IMAGE = "IMG";
 	static final String FIELD_BRANCHID = "BI";
@@ -32,6 +33,7 @@ public interface IDetailManager {
 	static final String FIELD_UP_ID = "UI";
 	static final String FIELD_UP_NAME = "UN";
 	static final String FIELD_DISP = "DISP";
+	static final String FIELD_LAYOUTOPT = "LAYOUTOPT";
 
 	static final String FIELD_SEGMENT = "SEG";
 	static final String FIELD_SEGMENT_REMOVER = "SEG_DEL";
@@ -79,6 +81,13 @@ public interface IDetailManager {
 	static final String IMG_LOGO_SQUARE = "logo-square";
 	static final String IMG_LOGO_WIDERECT = "logo-widerect";
 	static final String IMG_LOGO_TALLRECT = "logo-tallrect";
+	
+	public static final int LAYOUTOPT_UNINITIALIZED = -1;
+	public static final int LAYOUTOPT_DEFAULT = 0;
+	public static final int LAYOUTOPT_DETAIL = 1;
+	public static final int LAYOUTOPT_DETAIL_SQUARE = 2;
+	public static final int LAYOUTOPT_DETAIL_WIDE = 3;
+	public static final int LAYOUTOPT_COUNT = 4;
 
 	String drill(String uid, String targetType, String targetId, String targetSyscat, List<String> segments, 
 			String gpsLon, String gpsLat/*, int page, int size*/) throws SQLException;
