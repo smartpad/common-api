@@ -9,6 +9,16 @@ import java.util.StringTokenizer;
 public class SmartpadCommon {
 	
 	public static final String SUBSTITUTION_SEP = "#";
+
+	public static String[] clothFields;
+	
+	public static String[] washerFields;
+
+	public static String[] mattressFields;
+
+	public static String[] drapFields;
+
+	public static String[] pillowFields;
 	
 	public static IPartnerManager partnerManager;
 	
